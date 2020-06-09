@@ -10,18 +10,24 @@
 
 ### Setup
 
+Clone the Git repository
+Install Dependencies
+Run Node
+
 #### `.env` requirements
 
-- `PORT` - Port Number
+- `PORT` - 3000
 
 #### Running the app
 
-- `npm start`
-- Endpoint: `/`
-  - Returns true or false
+- `node -a <INSERT NOTE TEXT HERE>`
+- `node --add <INSERT NOTE TEXT HERE>`
+
 
 #### Tests
 
+if anything but -a or --add is given as a command, the note is rejected. 
+
 #### UML
 
-![UML Diagram](whiteboard.jpg)
+![UML Diagram](https://imgur.com/a/HGUnTtb)
