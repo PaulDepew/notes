@@ -4,7 +4,7 @@
 
 ### Author: Paul Depew
 
-- [submission PR](https://github.com/PaulDepew/notes)
+- [submission PR](https://github.com/PaulDepew/notes/pull/1)
 - [tests report](n/a)
 - [front-end](n/a)
 
