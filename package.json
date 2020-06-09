@@ -1,11 +1,10 @@
 {
   "name": "notes",
   "version": "1.0.0",
-  "description": "",
+  "description": "# NOTESY APP",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "stat": "node "
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/PaulDepew/notes/issues"
   },
-  "homepage": "https://github.com/PaulDepew/notes#readme"
+  "homepage": "https://github.com/PaulDepew/notes#readme",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }
