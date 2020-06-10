@@ -1,32 +1,19 @@
 'use strict';
 
-/**
- * This is a function.
- *
- * @param options - Entered from the Command line Arguments
- * @return options - An Input Object
- */
-
-// Node Module libraries
+// node modules
+const minimist = require('minimist');
 const Input = require('./lib/input');
-const Note = require('./lib/notes');
+const Notes = require('./lib/notes');
 
+// new instance of constructor function from input.js file
+const userInput = new Input;
 
+if (userInput.validate(userInput) === true){
 
+  // passes user input via above constructor to notes library
+  const addNote = new Notes(userInput);
+  addNote.execute(userInput);
+  addNote.add(userInput);
 
-const options = new Input();
-// console.log(options);
-
-
-function fetch(options) {
-  if (options.action === false) {
-    console.log('There was an error with your method! Please try again');
-  } else {
-    console.log(`Adding Note:  ${options.payload}`);
-  }
-}
-fetch(options);
-
-let note = new Note(options);
-
-console.log(note);
+  console.log(addNote);
+} else { console.log('ERROR! Please insert a proper command!') ;}
