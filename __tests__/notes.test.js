@@ -1,5 +1,4 @@
-const notes = require('./notes.js');
-const jest = require('jest');
+const notes = require('../lib/notes.js');
 
 jest.spyOn(global.console, 'log');
 
@@ -8,7 +7,7 @@ describe('testing the note modules', () => {
   it('should fire the console log function', () => {
 
     // here is the real js test
-    Note({ a: 'Hello Mom!' });
-    expect(console.log).toHaveBeenCalled();
+   let newNote = new notes({ action: 'add ', payload: 'Hello', catName:'General' });
+    expect(newNote).toEqual({ action: 'add ', note: 'Hello', catName:'General' });
   });
 });
